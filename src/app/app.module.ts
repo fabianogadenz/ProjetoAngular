@@ -8,6 +8,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgifNgforComponent } from './ngif-ngfor/ngif-ngfor.component';
 import { CrudComponent } from './components/crud/crud.component';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 const appRoutes: Routes = [
   { path: 'data-binding', component: DataBindingComponent },
@@ -28,7 +29,7 @@ const appRoutes: Routes = [
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
     ),
-    BrowserModule, HttpClientModule,
+    BrowserModule, HttpClientModule, BrowserAnimationsModule,
   ],
   providers: [HttpClient],
   bootstrap: [AppComponent]
