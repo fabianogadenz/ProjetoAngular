@@ -1,0 +1,11 @@
+<p>data-binding works! testeeeee</p>
+<p>input</p>
+<input type="text" (input)="this.numero = $event.target.value" />
+<br>
+<p>change</p>
+<input type="text" (change)="this.numero = $event.target.value" />
+<br>
+<p>evento</p>
+<input type="text" (input)="obtemNumero($event.target.value)" />
+
+<p>{{numero}}</p>
