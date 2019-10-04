@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ngif-ngfor.component.css']
 })
 export class NgifNgforComponent implements OnInit {
-
+  arrNumeros = [1, 2, 3, 4, 5];
+  numero: number;
   constructor() { }
 
   ngOnInit() {
